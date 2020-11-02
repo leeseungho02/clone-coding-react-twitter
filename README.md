@@ -8,3 +8,4 @@
 
 [이메일과 패스워드로 사용자 생성](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createuserwithemailandpassword)
 [이메일과 패스워드로 로그인](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signinwithemailandpassword)
+[소셜 로그인](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signinwithredirect)
