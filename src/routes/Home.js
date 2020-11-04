@@ -20,14 +20,21 @@ function Home({ userObj }) {
     }, []);
     const onSubmit = async (event) => {
         event.preventDefault();
-        const fileRef = storageService.ref().child(`${userObj.uid}/${uuidv4()}`); 
-        await fileRef.putString(attachment, "data_url");
-        // await dbService.collection("nweets").add({
-        //     text: nweet,
-        //     createAt: Date.now(),
-        //     creatorId: userObj.uid
-        // });
-        // setNweet("");
+        let attachmentUrl = "";
+        if (attachment != "") {
+            const attachmenRef = storageService.ref().child(`${userObj.uid}/${uuidv4()}`);
+            const response = await attachmenRef.putString(attachment, "data_url");
+            attachmentUrl = await response.ref.getDownloadURL();
+        }
+        const nweetObj = {
+            text: nweet,
+            createAt: Date.now(),
+            creatorId: userObj.uid,
+            attachmentUrl: attachmentUrl
+        };
+        await dbService.collection("nweets").add(nweetObj);
+        setNweet("");
+        setAttachment(null);
     };
     const onChange = (event) => {
         const { target: { value } } = event;
@@ -50,13 +57,13 @@ function Home({ userObj }) {
             <input type="text" value={nweet} placeholder="What's on you mind?" onChange={onChange} maxLength={120} />
             <input type="file" accept="image/*" onChange={onFileChange} />
             <input type="submit" value="Nweet" />
-            { attachment && (
+            {attachment && (
                 <div>
-                <img src={attachment} width="50px" height="50px" />
-                <button onClick={onClearAttachment}>Clear</button>
+                    <img src={attachment} width="50px" height="50px" />
+                    <button onClick={onClearAttachment}>Clear</button>
                 </div>
             )}
-            
+
         </form>
         <div>
             {nweets.map(nweet => (
