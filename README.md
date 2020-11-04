@@ -11,5 +11,8 @@
 [이메일과 패스워드로 사용자 생성](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#createuserwithemailandpassword) <br>
 [이메일과 패스워드로 로그인](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signinwithemailandpassword) <br>
 [소셜 로그인](https://firebase.google.com/docs/reference/js/firebase.auth.Auth#signinwithredirect) <br>
+
+### 📑 FireBase API
+
 [실시간 업데이트](https://firebase.google.com/docs/firestore/query-data/listen) <br>
 [스토리지 참조 만들기](https://firebase.google.com/docs/storage/web/create-reference) <br>
