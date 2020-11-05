@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 function Home({ userObj }) {
     const [nweet, setNweet] = useState("");
     const [nweets, setNweets] = useState([]);
-    const [attachment, setAttachment] = useState();
+    const [attachment, setAttachment] = useState("");
     useEffect(() => {
         dbService.collection("nweets").onSnapshot((snapshot) => {
             // ... => spread attribute 기능
