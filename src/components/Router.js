@@ -5,11 +5,11 @@ import Home from "routes/Home";
 import Profile from "routes/Profile";
 import Navigation from "components/Navigation";
 
-function AppRouter({ refreshUser, isLoggedIn, userObj }) {
+function AppRouter({ refreshUser, userObj }) {
     return <Router>
-        {isLoggedIn && <Navigation userObj={userObj} />}
+        {userObj && <Navigation userObj={userObj} />}
         <Switch>
-            {isLoggedIn ? (
+            {userObj ? (
                 <>
                     <Route exact path="/">
                         <Home userObj={userObj} />
