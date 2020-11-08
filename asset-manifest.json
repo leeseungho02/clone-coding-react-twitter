@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/clone-coding-react-twitter/static/css/main.4ee53346.chunk.css",
+    "main.js": "/clone-coding-react-twitter/static/js/main.c35f6064.chunk.js",
+    "main.js.map": "/clone-coding-react-twitter/static/js/main.c35f6064.chunk.js.map",
+    "runtime-main.js": "/clone-coding-react-twitter/static/js/runtime-main.fb893332.js",
+    "runtime-main.js.map": "/clone-coding-react-twitter/static/js/runtime-main.fb893332.js.map",
+    "static/js/2.427cf204.chunk.js": "/clone-coding-react-twitter/static/js/2.427cf204.chunk.js",
+    "static/js/2.427cf204.chunk.js.map": "/clone-coding-react-twitter/static/js/2.427cf204.chunk.js.map",
+    "index.html": "/clone-coding-react-twitter/index.html",
+    "static/css/main.4ee53346.chunk.css.map": "/clone-coding-react-twitter/static/css/main.4ee53346.chunk.css.map",
+    "static/js/2.427cf204.chunk.js.LICENSE.txt": "/clone-coding-react-twitter/static/js/2.427cf204.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb893332.js",
+    "static/js/2.427cf204.chunk.js",
+    "static/css/main.4ee53346.chunk.css",
+    "static/js/main.c35f6064.chunk.js"
+  ]
+}
